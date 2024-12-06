@@ -6,4 +6,4 @@ Clone the repo
     $ cd llvm-project
 configure it using
 
-    $
+    $ cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DLLVM_ENABLE_PROJECTS="clang;lld" -DCMAKE_INSTALL_PREFIX=/home/riscv_sec/llvm-install/ -DLLVM_USE_LINKER=lld  -DLLVM_INSTALL_ASSERTIONS=ON  -DLLVM_TARGETS_TO_BUILD="RISCV"
